@@ -23,7 +23,7 @@ python3 -m pip install -e .
 
 # Usage 
 
-To start the API server, simply run the following command:
+To start the services, simply run the following command:
 ```bash
-hgf webserver
+hgf serve
 ```

@@ -81,13 +81,13 @@ class Arguments:
             # required=True
         )
 
-        # Add webserver subcommand
-        webserver_cmd = subparsers.add_parser(
-            "webserver", help="Webserver module.", parents=[_common_parser]
+        # Add serve subcommand
+        serve_cmd = subparsers.add_parser(
+            "serve", help="Serve module.", parents=[_common_parser]
         )
 
-        webserver_cmd.set_defaults(func=start_webserver)
-        self._build_args(optionlist=ARGS_WEBSERVER, parser=webserver_cmd)
+        serve_cmd.set_defaults(func=start_webserver)
+        self._build_args(optionlist=ARGS_WEBSERVER, parser=serve_cmd)
 
         # Add file converter subcommand
 
