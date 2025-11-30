@@ -10,6 +10,8 @@ from starlette.responses import JSONResponse
 
 from hgf.constants import Config
 
+logger = logging.getLogger(__name__)
+
 class FTJSONResponse(JSONResponse):
   media_type = "application/json"
 
